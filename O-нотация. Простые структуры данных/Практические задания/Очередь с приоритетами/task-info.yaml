@@ -12,7 +12,7 @@ files:
           offset: 258
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           self.priority_queue: dict[int, deque] = {
                       priority: deque() for priority in range(self.HIGH_PRIORITY, self.LOW_PRIORITY + 1)
@@ -25,7 +25,7 @@ files:
           offset: 601
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: "self.priority_queue[priority].append(elem)"
       - offset: 862
         length: 37
@@ -35,7 +35,7 @@ files:
           offset: 862
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           for queue in self.priority_queue.values():
                       if queue:
@@ -50,7 +50,7 @@ files:
           offset: 1467
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           if not isinstance(ind, int):
                       raise TypeError(f"Индекс должен быть целочисленного типа, а не {type(ind).__name__}")
@@ -68,7 +68,7 @@ files:
           offset: 1573
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           for queue in self.priority_queue.values():
                       queue.clear()
@@ -80,7 +80,7 @@ files:
           offset: 1689
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Failed
         encrypted_possible_answer: |-
           len_ = 0
                   for queue in self.priority_queue.values():
@@ -223,5 +223,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Error
+  time: "Sat, 02 Sep 2023 08:06:59 UTC"
 record: -1
