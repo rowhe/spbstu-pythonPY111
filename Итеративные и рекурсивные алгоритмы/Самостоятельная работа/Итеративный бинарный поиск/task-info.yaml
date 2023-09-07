@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 381
-        length: 61
+        length: 51
         placeholder_text: "...  # TODO реализовать итеративный алгоритм бинарного поис\
       ка"
         initial_state:
           length: 61
           offset: 381
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: |-
           left_border = 0
