@@ -12,4 +12,14 @@ def sort(container: List[int]) -> List[int]:
     :param container: последовательность, которую надо отсортировать
     :return: Отсортированная в порядке возрастания последовательность
     """
-    ...  # TODO реализовать алгоритм быстрой сортировки
+    #  реализовать алгоритм быстрой сортировки
+    if not container:
+        return container
+
+    start = container[0]
+
+    left_part = [elem for elem in container if elem < start]
+    right_part = [elem for elem in container if elem > start]
+    middle_part = [elem for elem in container if elem == start]
+
+    return (sort(left_part) + middle_part + sort(right_part))
