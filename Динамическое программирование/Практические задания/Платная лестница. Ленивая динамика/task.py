@@ -10,7 +10,8 @@ def stairway_path(stairway: Sequence[Union[float, int]]) -> Union[float, int]:
     :param stairway: список целых чисел, где каждое целое число является стоимостью конкретной ступени
     :return: минимальная стоимость подъема на верхнюю ступень
     """
-    ...  # TODO реализовать ленивую динамику
+     #  реализовать ленивую динамику
+    @lru_cache()
     def lazy_dyn(stairway, n):
         if n == 0 or n == 1:
             return stairway[n]

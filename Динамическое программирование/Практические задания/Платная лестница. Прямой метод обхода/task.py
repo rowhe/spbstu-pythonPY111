@@ -27,7 +27,5 @@ def stairway_path(stairway: Sequence[Union[float, int]]) -> Union[float, int]:
     return cost[-1]
 
 
-
-
 if __name__ == '__main__':
     print(stairway_path([1, 3, 1, 5]))  # 7
