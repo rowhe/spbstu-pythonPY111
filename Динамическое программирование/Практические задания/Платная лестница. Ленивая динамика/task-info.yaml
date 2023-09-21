@@ -11,7 +11,7 @@ files:
           offset: 481
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: |-
           @lru_cache
               def lazy_method(stairway, n):
@@ -85,5 +85,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 21 Sep 2023 16:37:59 UTC"
 record: -1

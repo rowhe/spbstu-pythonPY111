@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 263
-        length: 53
+        length: 359
         placeholder_text: "...  # TODO реализовать операцию push"
         initial_state:
           length: 37
@@ -13,8 +13,8 @@ files:
         selected: true
         status: Solved
         encrypted_possible_answer: self._stack.append(elem)
-      - offset: 593
-        length: 61
+      - offset: 836
+        length: 36
         placeholder_text: "...  # TODO реализовать операцию pop"
         initial_state:
           length: 36
@@ -27,8 +27,8 @@ files:
                       raise IndexError("Извлечение из пустого стека не возможно")
           
                   return self._stack.pop()
-      - offset: 1126
-        length: 228
+      - offset: 1344
+        length: 37
         placeholder_text: "...  # TODO реализовать операцию peek"
         initial_state:
           length: 37
@@ -45,8 +45,8 @@ files:
           
                   inv_ind = -1 - ind
                   return self._stack[inv_ind]
-      - offset: 1424
-        length: 49
+      - offset: 1451
+        length: 38
         placeholder_text: "...  # TODO реализовать операцию clear"
         initial_state:
           length: 38
@@ -55,8 +55,8 @@ files:
         selected: true
         status: Solved
         encrypted_possible_answer: self._stack.clear()
-      - offset: 1559
-        length: 56
+      - offset: 1575
+        length: 40
         placeholder_text: "...  # TODO реализовать операцию __len__"
         initial_state:
           length: 40
@@ -209,5 +209,5 @@ files:
 status: Solved
 feedback:
   message: Congratulations!
-  time: "Thu, 07 Sep 2023 15:00:40 UTC"
+  time: "Thu, 21 Sep 2023 15:06:59 UTC"
 record: -1
