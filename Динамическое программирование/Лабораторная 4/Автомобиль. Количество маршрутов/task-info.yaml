@@ -4,15 +4,15 @@ files:
     visible: true
     placeholders:
       - offset: 347
-        length: 66
+        length: 56
         placeholder_text: "...  # TODO решить задачу с помощью динамического программи\
       рования"
         initial_state:
           length: 66
           offset: 347
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: '...'
     text: |
       from typing import List
@@ -62,5 +62,8 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 21 Sep 2023 18:10:51 UTC"
 record: -1

@@ -35,6 +35,7 @@ def rocket_coasts(table: List[List[int]]) -> List[List[int]]:
             table[i][j] += min(table[i-1][j], table[i][j-1])
     return table
 
+
 if __name__ == '__main__':
     coasts_ceil = [
         [2, 7, 9, 3],
