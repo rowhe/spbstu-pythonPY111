@@ -12,4 +12,37 @@ def dfs(g: nx.Graph, start_node: Hashable) -> List[Hashable]:
     :param start_node: Стартовый узел, откуда нужно начать обход
     :return: Список узлов в порядке посещения.
     """
-    ...  # TODO реализовать обход в глубину
+    # реализовать обход в глубину
+    path = []
+    visited = {node:False for node in g.nodes}
+
+    def recursion(current):
+        visited[current] = True
+        path.append(current)
+        for neighbour in g[current]:
+            if not visited[neighbour]:
+                recursion(neighbour)
+
+
+
+
+    recursion(start_node)
+    return path
+
+
+
+
+
+if __name__ == "__main__":
+    g = nx.Graph()
+    g.add_nodes_from("ABCDFG")
+    g.add_edges_from([
+        ('A', 'C'),
+        ('A', 'B'),
+        ('C', 'F'),
+        ('B', 'E'),
+        ('B', 'D'),
+        ('E', 'G')
+    ])
+
+    print(dfs(g, "A"))

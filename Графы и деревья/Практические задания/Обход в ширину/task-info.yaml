@@ -55,15 +55,15 @@ files:
   - name: task.py
     visible: true
     placeholders:
-      - offset: 561
-        length: 38
+      - offset: 593
+        length: 29
         placeholder_text: "...  # TODO реализовать обход в ширину"
         initial_state:
           length: 38
           offset: 561
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: |-
           visited = {node: False for node in g.nodes}
               d = deque()  # начало слева, конец справа
@@ -80,16 +80,16 @@ files:
                           visited[neighbor] = True  # если узел "подожжен", то мы его посещали
           
               return path
-      - offset: 633
-        length: 72
+      - offset: 1042
+        length: 68
         placeholder_text: '# TODO записать граф с помощью модуля networkx и прверить обход
       в ширину'
         initial_state:
           length: 72
           offset: 633
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: |-
           graph = nx.Graph()
               graph.add_nodes_from("ABCDEFGHIJ")
@@ -139,5 +139,8 @@ files:
   - name: img.png
     visible: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Sep 2023 16:10:17 UTC"
 record: -1
