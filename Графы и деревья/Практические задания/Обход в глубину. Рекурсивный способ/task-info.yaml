@@ -11,7 +11,7 @@ files:
           offset: 531
         initialized_from_dependency: false
         selected: true
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: |-
           visited = {node: False for node in g.nodes}
               path = []
@@ -92,5 +92,8 @@ files:
   - name: img.png
     visible: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Sep 2023 16:56:21 UTC"
 record: -1
