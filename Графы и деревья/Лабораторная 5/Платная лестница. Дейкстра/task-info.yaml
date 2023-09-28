@@ -4,26 +4,26 @@ files:
     visible: true
     placeholders:
       - offset: 451
-        length: 103
+        length: 93
         placeholder_text: "...  # TODO c помощью функции из модуля networkx найти стои\
       мость кратчайшего пути до последней лестницы"
         initial_state:
           length: 103
           offset: 451
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: '...'
-      - offset: 657
-        length: 108
+      - offset: 716
+        length: 98
         placeholder_text: "...  # TODO записать взвешенный граф, а лучше написать функ\
       цию, которая формирует граф по стоимости ступеней"
         initial_state:
           length: 108
           offset: 657
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: '...'
     text: |
       from typing import Union
@@ -149,5 +149,8 @@ files:
   - name: img.png
     visible: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Sep 2023 18:14:12 UTC"
 record: -1

@@ -4,15 +4,15 @@ files:
     visible: true
     placeholders:
       - offset: 693
-        length: 82
+        length: 72
         placeholder_text: "...  # TODO вернуть стоимость путей до всех вершин посчитан\
       ных алгоритмом Дейкстры"
         initial_state:
           length: 82
           offset: 693
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: |-
           _, coasts = nx.dijkstra_predecessor_and_distance(g, starting_node)
               for node in g.nodes:
@@ -20,15 +20,15 @@ files:
                       coasts[node] = float("inf")
           
               return coasts
-      - offset: 809
-        length: 25
+      - offset: 977
+        length: 15
         placeholder_text: "...  # TODO записать граф"
         initial_state:
           length: 25
           offset: 809
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: |-
           graph = nx.DiGraph()
               graph.add_weighted_edges_from([
@@ -136,5 +136,8 @@ files:
   - name: img.png
     visible: true
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 28 Sep 2023 17:26:07 UTC"
 record: -1
